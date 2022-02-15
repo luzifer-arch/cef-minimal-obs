@@ -1,9 +1,9 @@
 # Maintainer: Knut Ahlers <knut at ahlers dot me>
 
 pkgname=cef-minimal-obs
-pkgver=89.0.18
-_pkgcommit="gb36241d"
-_chromiumver="89.0.4389.114"
+pkgver=95.7.10
+_pkgcommit="g00d4ad5"
+_chromiumver="95.0.4638.54"
 pkgrel=1
 pkgdesc="Chromium Embedded Framework minimal release"
 arch=("x86_64")
@@ -19,7 +19,7 @@ _pkgver="${pkgver}+${_pkgcommit}+chromium-${_chromiumver}"
 _url_pkgver="${pkgver}%2B${_pkgcommit}%2Bchromium-${_chromiumver}"
 
 source=("${_cdn_build_package_url}/cef_binary_${_url_pkgver}_linux64_minimal.tar.bz2")
-sha512sums=('28b2c7eb7e7de704fd1056cd192462d6b031922ef00e2d334fedad65513f7f81a687ee8cee5719984edee5352247ee39fd346c81ee5f84918b677497fca051bf')
+sha512sums=('9a3184f73646c2388c0ce1a731325cd50dfbec48398a8f94a565324fb4b4cf35517de93db422aaf3cbeafb61fdb41b9a8fbba4da46b486ace168214af32b22cc')
 
 build() {
 	cd "$srcdir"/cef_binary_${_pkgver}_linux64_minimal
